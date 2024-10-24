@@ -1,5 +1,4 @@
-Exploratory Data Analysis (EDA) on a CSV file.
-
+Exploratory Data Analysis (EDA) on a CSV file like Amazon_data.csv, you'll typically follow these steps:
 
 Load the Data: Read the CSV file into a DataFrame.
 Understand the Structure: Check the shape and data types of the DataFrame.
