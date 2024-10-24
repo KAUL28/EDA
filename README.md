@@ -1,4 +1,4 @@
-# Exploratory Data Analysis (EDA) on a CSV file  Amazon_data.csv
+# Exploratory Data Analysis (EDA) on a CSV file "Amazon_data.csv" and "nhl_stats1.csv"
 
 ### Load the Data : Read the CSV file into a DataFrame.
 ### Understand the Structure : Check the shape and data types of the DataFrame.
@@ -7,7 +7,23 @@
 ### Visualizations: Create plots to visualize distributions, relationships, and trends in the data.
 ### Correlation Analysis: Check for correlations between numerical variables.
 
-## Things that I did while working on this project.
+## Things that I did while working on nhl project.
+
+#### nunique() function provides the total number of uniques values present in each feature
+#### column' method provides name of each column
+#### info() function gives information about each feature such as no of samples (rows), no of columns along with their data
+#### analyze the spread of the "games_played" column
+#### No of matches played in 2017?
+#### Maximum Number os matched played?
+#### what is the most common age of player and how many players of that age are present during 1999-2018 leagues data ?
+#### Total no of players in each position
+#### Matplotlib plotly pie chart for visualization of total no of positions are represented
+#### How is goal related to number of games played by different players?
+#### Catogorical feature and contineous feature
+#### No of goals per game for season 1999-2003
+#### Two categorical features
+
+## Things that I did while working on Amazon project.
 
 #### Find and drop Duplicate Values
 #### Removing unwanted characters and changing the data type
