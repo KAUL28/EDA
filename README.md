@@ -1,46 +1,82 @@
-# Exploratory Data Analysis (EDA) on a CSV file "Amazon_data.csv" and "nhl_stats1.csv"
+# Project Objectives
+### The project aims to:
 
-### Load the Data : Read the CSV file into a DataFrame.
-### Understand the Structure : Check the shape and data types of the DataFrame.
-### Summary Statistics:Generate descriptive statistics to understand the distribution of the data.
-### Missing Values: Identify any missing values and their impact.
-### Visualizations: Create plots to visualize distributions, relationships, and trends in the data.
-### Correlation Analysis: Check for correlations between numerical variables.
+#### Perform data visualization and analysis to uncover patterns, relationships, and outliers.
+#### Employ statistical and visualization techniques to conduct EDA across univariate, bivariate, and multivariate dimensions.
+#### Preprocess and transform datasets to make them suitable for modeling and analysis.
 
-## Things that I did while working on nhl project.
+## Technical Approach
+### Data Visualization
+#### Data visualization was conducted using three Python libraries:
 
-#### nunique() function provides the total number of uniques values present in each feature
-#### column' method provides name of each column
-#### info() function gives information about each feature such as no of samples (rows), no of columns along with their data
-#### analyze the spread of the "games_played" column
-#### No of matches played in 2017?
-#### Maximum Number os matched played?
-#### what is the most common age of player and how many players of that age are present during 1999-2018 leagues data ?
-#### Total no of players in each position
-#### Matplotlib plotly pie chart for visualization of total no of positions are represented
-#### How is goal related to number of games played by different players?
-#### Catogorical feature and contineous feature
-#### No of goals per game for season 1999-2003
-#### Two categorical features
+#### Seaborn: 
+Used for creating statistical visualizations such as relational, categorical, and distribution plots.
+#### Matplotlib:
+A foundational library employed for custom 2D plotting to support and enhance Seaborn visualizations.
+#### Plotly: 
+Used to create interactive visualizations, facilitating dynamic analysis for user engagement.
 
-## Things that I did while working on Amazon project.
+Visualization focused on:
 
-#### Find and drop Duplicate Values
-#### Removing unwanted characters and changing the data type
-#### rating column
-#### Reviews
-#### Price Column
-#### Saving
-#### One Hot Encoding
-#### Label Encoding
-#### Dealing with missing values
-#### Median imputation and KNN imputation technique
+#### Relational Analysis:
+Scatter plots and line charts for analyzing correlations between continuous variables.
+#### Categorical Analysis:
+Count plots and box plots to visualize distribution among categorical variables.
+#### Distribution Analysis:
+Histogram and KDE plots to examine the distribution of data points.
+#### Regression Analysis:
+Used for visualizing linear relationships and identifying trends within the data.
+### Exploratory Data Analysis (EDA)
+The EDA was segmented into three main analyses:
 
+#### 1. Univariate Analysis: Analyzed each feature individually.
 
-## What Was the Outcome
-##### The project yielded several valuable insights and outcomes:
-###### Data Integrity: The removal of duplicates and cleaning of data types enhanced the dataset's integrity, ensuring accurate analysis.
-###### Insightful Visualizations: Plots and visualizations provided a clearer understanding of distributions, trends, and relationships among variables, aiding in data-driven decision-making.
-###### Improved Data Quality: Handling missing values through imputation techniques improved the dataset's overall quality and usability for analysis.
-###### Readiness for Modeling: The dataset was well-prepared for subsequent modeling or machine learning tasks, with encoded categorical features and a cleaned structure.
-###### Found Patterns: The correlation analysis revealed important relationships between variables, which could inform business decisions or further research.
+##### *Continuous Variables*:
+Histograms and KDE plots were generated to observe skewness, kurtosis, and the presence of outliers.
+##### *Categorical Variables*:
+Bar plots and count plots were created to examine frequency distributions.
+#### 2. Bivariate Analysis: Assessed relationships between pairs of variables.
+
+##### *Continuous-Continuous*: 
+Correlation matrices and scatter plots to evaluate linear relationships.
+##### *Continuous-Categorical*: 
+Box plots and violin plots to observe how categorical variables influence continuous ones.
+##### *Categorical-Categorical*: 
+Grouped bar charts to examine dependencies among categorical variables.
+#### 3. Multivariate Analysis:
+
+##### *Pair Plot Analysis*:
+Conducted to assess relationships across multiple variables.
+##### *Heatmap Analysis*: 
+Visualized correlation across features to identify highly correlated variables, which can inform feature engineering.
+### Data Preprocessing
+Preprocessing was performed to improve data quality, with the following steps:
+
+##### *Duplicate Removal*: 
+Identified and removed duplicate records.
+##### *Missing Value Imputation*: 
+Employed various imputation techniques, based on feature type, to handle missing data.
+##### *Outlier Detection*: 
+Used both visual (box plots, scatter plots) and statistical techniques (IQR, Z-scores) to identify and handle outliers.
+##### *Data Transformation*: 
+Applied scaling (standardization, normalization) to ensure data uniformity across features, facilitating reliable model performance.
+##### *Encoding of Categorical Variables*: 
+Implemented One-Hot Encoding and Label Encoding to convert categorical variables to numerical format.
+## Results
+### NHL Dataset Insights:
+
+##### Observed correlations between variables such as shots, goals, and time-on-ice, which are predictive of offensive performance.
+##### Positional analysis indicated that specific player roles are associated with higher goal and assist counts, guiding performance metrics by player position.
+### Amazon Smartphones & Accessories Dataset Insights:
+
+##### Identified pricing and feature trends across top-rated products, highlighting consumer preferences.
+##### Analyzed the relationship between product rating, review count, and pricing, revealing that high-rated products with specific features tend to attract more reviews.
+### Data Quality Improvement:
+
+##### Enhanced dataset integrity by handling missing data and outliers, ensuring the datasets were analysis-ready and suitable for model training.
+##### Prepared transformed datasets that comply with standard machine learning model input requirements.
+
+## References
+##### Seaborn Documentation
+##### Matplotlib Documentation
+##### Plotly Documentation
