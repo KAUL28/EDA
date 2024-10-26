@@ -1,9 +1,9 @@
 # Project Objectives
 ### The project aims to:
 
-#### Perform data visualization and analysis to uncover patterns, relationships, and outliers.
-#### Employ statistical and visualization techniques to conduct EDA across univariate, bivariate, and multivariate dimensions.
-#### Preprocess and transform datasets to make them suitable for modeling and analysis.
+##### Perform data visualization and analysis to uncover patterns, relationships, and outliers.
+##### Employ statistical and visualization techniques to conduct EDA across univariate, bivariate, and multivariate dimensions.
+##### Preprocess and transform datasets to make them suitable for modeling and analysis.
 
 ## Technical Approach
 ### Data Visualization
@@ -65,16 +65,16 @@ Implemented One-Hot Encoding and Label Encoding to convert categorical variables
 ## Results
 ### NHL Dataset Insights:
 
-##### Observed correlations between variables such as shots, goals, and time-on-ice, which are predictive of offensive performance.
-##### Positional analysis indicated that specific player roles are associated with higher goal and assist counts, guiding performance metrics by player position.
+###### Observed correlations between variables such as shots, goals, and time-on-ice, which are predictive of offensive performance.
+###### Positional analysis indicated that specific player roles are associated with higher goal and assist counts, guiding performance metrics by player position.
 ### Amazon Smartphones & Accessories Dataset Insights:
 
-##### Identified pricing and feature trends across top-rated products, highlighting consumer preferences.
-##### Analyzed the relationship between product rating, review count, and pricing, revealing that high-rated products with specific features tend to attract more reviews.
+###### Identified pricing and feature trends across top-rated products, highlighting consumer preferences.
+###### Analyzed the relationship between product rating, review count, and pricing, revealing that high-rated products with specific features tend to attract more reviews.
 ### Data Quality Improvement:
 
-##### Enhanced dataset integrity by handling missing data and outliers, ensuring the datasets were analysis-ready and suitable for model training.
-##### Prepared transformed datasets that comply with standard machine learning model input requirements.
+###### Enhanced dataset integrity by handling missing data and outliers, ensuring the datasets were analysis-ready and suitable for model training.
+###### Prepared transformed datasets that comply with standard machine learning model input requirements.
 
 ## References
 ##### Seaborn Documentation
